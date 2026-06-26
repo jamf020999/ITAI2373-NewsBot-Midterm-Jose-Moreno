@@ -10,7 +10,7 @@ ITAI 2373 – Natural Language Processing
 
 ## IMPORTANT: First, run all cells in the Jupyter notebook. When prompted, upload the dataset file (BBC News Train.csv)
 
-## There is attached a pdf file with the same name of the notebook, which allows to visualize the cells without running them
+## On the folder, a pdf file with the same name of the notebook, allows to visualize the cells without running the notbook
 
 ## Project Overview
 
