@@ -8,6 +8,10 @@ Jose Moreno
 
 ITAI 2373 – Natural Language Processing
 
+## IMPORTANT: First, run all cells in the Jupyter notebook. When prompted, upload the dataset file (BBC News Train.csv)
+
+## There is attached a pdf file with the same name of the notebook, which allows to visualize the cells without running them
+
 ## Project Overview
 
 This project implements a NewsBot Intelligence System that applies multiple Natural Language Processing techniques to analyze news articles. The system performs text preprocessing, feature extraction, sentiment analysis, named entity recognition, syntactic analysis, and automatic news classification.
