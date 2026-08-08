@@ -22,6 +22,10 @@ The system performs text preprocessing, feature extraction, linguistic analysis,
 
 Before running the notebook:
 
+The notebook is located on: https://github.com/jamf020999/ITAI2373-NewsBot-Final_Project-Jose-Moreno/blob/main/ITAI2373-NewsBot-Midterm/notebooks/NewsBot_Intelligence_System_2_Completed_Jose_Moreno_ITAI2373.ipynb
+
+The dataset is located in: https://github.com/jamf020999/ITAI2373-NewsBot-Final_Project-Jose-Moreno/blob/main/ITAI2373-NewsBot-Midterm/data/raw/BBC%20News%20Train.csv
+
 1. Open the Jupyter Notebook in Google Colab.
 2. Run all cells from top to bottom.
 3. When prompted, upload the dataset file **BBC News Train.csv**.
