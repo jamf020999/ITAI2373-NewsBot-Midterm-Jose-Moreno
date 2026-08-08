@@ -1,1 +1,18 @@
+# NewsBot Intelligence System 2.0
+# API Key Configuration Template
+#
+# IMPORTANT:
+# Do not place real API keys or passwords in this file.
+# This file only demonstrates where external service credentials
+# would be configured if required.
 
+# Example OpenAI API Key
+OPENAI_API_KEY=YOUR_API_KEY_HERE
+
+# Example Hugging Face Token
+HUGGINGFACE_TOKEN=YOUR_TOKEN_HERE
+
+# Example Translation Service API Key
+TRANSLATION_API_KEY=YOUR_API_KEY_HERE
+
+# Add additional external service keys below if needed.
