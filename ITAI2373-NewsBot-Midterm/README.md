@@ -31,6 +31,18 @@ An executed PDF version of the notebook is included in this repository so the ou
 
 ---
 
+## Installation
+
+To install the required Python packages in a local environment, run:
+
+```bash
+pip install -r requirements.txt
+```
+
+The completed notebook can also be run in Google Colab, where the required resources are installed or loaded by the notebook setup cells.
+
+---
+
 ## Features
 
 The NewsBot Intelligence System includes the following NLP components:
@@ -42,13 +54,16 @@ The NewsBot Intelligence System includes the following NLP components:
 - Sentiment analysis
 - Named Entity Recognition (NER)
 - News article classification
-- Topic Modeling (LDA and NMF)
+- Topic Modeling using LDA and NMF
 - Extractive text summarization
 - Transformer-based text summarization
 - Semantic search using sentence embeddings
+- Query expansion
 - Multilingual language detection
 - Automatic translation
+- Cross-language search
 - Interactive conversational NewsBot interface
+- Integrated article analysis
 
 ---
 
@@ -56,9 +71,11 @@ The NewsBot Intelligence System includes the following NLP components:
 
 Dataset used:
 
-- BBC News Train.csv
+- `data/raw/BBC News Train.csv`
 
-The dataset contains news articles from several categories and is used for training and evaluating the classification models throughout the project.
+The dataset contains BBC news articles from several categories and is used for training, evaluating, and demonstrating the NLP components throughout the project.
+
+The dataset does not provide authentic publication dates, so the project does not make claims about genuine topic evolution over time.
 
 ---
 
@@ -72,18 +89,88 @@ The dataset contains news articles from several categories and is used for train
 - Scikit-learn
 - Matplotlib
 - Seaborn
+- WordCloud
+- Plotly
 - Transformers
 - Sentence Transformers
 - LangDetect
+- Deep Translator
+- pytest
 
 ---
 
-## Project Files
+## Repository Structure
 
-- NewsBot_Intelligence_System_2_Completed_Jose_Moreno.ipynb
-- NewsBot_Intelligence_System_2_Completed_Jose_Moreno.pdf
-- BBC News Train.csv
-- README.md
+- `config/` – Project configuration and API key template
+- `data/` – Raw dataset and directories for processed data, models, and results
+- `docs/` – User guide, API reference, deployment guide, and individual contributions
+- `notebooks/` – Completed NewsBot Intelligence System 2.0 Jupyter notebook
+- `reports/` – Technical documentation, executive summary, reflective journal, presentation, and supporting reports
+- `src/` – Modular Python source code for the NewsBot system
+- `tests/` – Automated tests for major system components
+- `README.md` – Project overview and usage information
+- `requirements.txt` – Python dependencies required by the project
+
+---
+
+## Main System Components
+
+### Data Processing
+
+The project includes text cleaning, preprocessing, validation, and feature extraction components used to prepare BBC news articles for analysis.
+
+### News Classification
+
+NewsBot trains and evaluates supervised machine learning models for automatic news article classification. The project compares multiple classifiers and integrates the strongest trained model into the final system.
+
+### Sentiment Analysis
+
+VADER sentiment analysis is used to identify positive, negative, and neutral sentiment in news content.
+
+### Named Entity Recognition
+
+spaCy Named Entity Recognition is used to identify entities such as people, organizations, and locations appearing in news articles.
+
+### Topic Modeling
+
+NewsBot uses both Latent Dirichlet Allocation (LDA) and Non-negative Matrix Factorization (NMF) to discover latent themes within the BBC news corpus.
+
+### Text Summarization
+
+The system supports article summarization using transformer-based summarization when available and an extractive summarization method as a fallback.
+
+### Semantic Search
+
+Semantic search allows users to retrieve relevant articles based on meaning rather than relying only on exact keyword matches. Sentence embeddings are used when available, with TF-IDF similarity available as a fallback.
+
+### Multilingual Processing
+
+The multilingual components provide language detection, translation, and cross-language search capabilities.
+
+### Conversational Interface
+
+The conversational NewsBot allows users to interact with the system using natural-language queries. Supported requests include article search, summarization, sentiment analysis, entity extraction, topic exploration, translation, and dataset statistics.
+
+---
+
+## Testing
+
+Automated tests are included in the `tests/` directory.
+
+The test suite covers major areas including:
+
+- Text preprocessing
+- Classification
+- Topic modeling
+- Semantic search
+- Intent detection
+- Basic system integration
+
+To run the tests from the project environment:
+
+```bash
+pytest tests/
+```
 
 ---
 
@@ -101,11 +188,18 @@ Since this is an individual submission, I completed all aspects of the project, 
 - Topic modeling implementation
 - Text summarization
 - Semantic search
+- Query expansion
 - Multilingual language processing
+- Cross-language search
 - Conversational NewsBot development
+- Final system integration
 - Testing and evaluation
 - GitHub repository organization
 - Technical documentation
+
+Additional details are available in:
+
+`docs/individual_contributions.md`
 
 ---
 
@@ -121,9 +215,41 @@ The completed NewsBot Intelligence System successfully performs:
 - Automatic text summarization
 - Semantic similarity search
 - Multilingual language detection and translation
+- Cross-language information retrieval
 - Interactive conversational news analysis
 
-The project demonstrates how multiple Natural Language Processing techniques can be integrated into a single intelligent system capable of analyzing news articles from several different perspectives.
+The final system integrates these capabilities into a single NewsBot 2.0 workflow rather than treating them only as separate NLP exercises.
+
+The project demonstrates how multiple Natural Language Processing techniques can be integrated into an intelligent system capable of analyzing news articles from several different perspectives.
+
+---
+
+## Limitations
+
+The project has several important limitations:
+
+- The dataset represents a single news publisher and a limited historical collection.
+- Sentiment analysis may misinterpret irony or complex reporting.
+- Named Entity Recognition may miss or misclassify uncommon entities.
+- Topic-model labels require human interpretation.
+- Translation may lose tone, context, or idiomatic meaning.
+- Automatic summaries may omit important context.
+- The dataset does not contain authentic publication dates for reliable temporal trend analysis.
+
+Human review remains important when automated NLP results are used for high-impact decisions.
+
+---
+
+## Documentation
+
+Additional project documentation is available in the `docs/` directory:
+
+- `user_guide.md`
+- `api_reference.md`
+- `deployment_guide.md`
+- `individual_contributions.md`
+
+Final project reports and presentation materials are available in the `reports/` directory.
 
 ---
 
@@ -131,4 +257,4 @@ The project demonstrates how multiple Natural Language Processing techniques can
 
 GitHub Repository:
 
-https://github.com/jamf020999/ITAI2373-NewsBot-Midterm-Jose-Moreno
+https://github.com/jamf020999/ITAI2373-NewsBot-Final_Project-Jose-Moreno
